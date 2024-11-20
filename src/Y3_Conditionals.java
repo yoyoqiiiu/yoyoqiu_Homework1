@@ -10,7 +10,7 @@ public class Y3_Conditionals {
     public Y3_Conditionals(){
         randomInt = (int)(Math.random()*10)+1;
         if (randomInt == 1 || randomInt == 10){
-            System.out.println("Something surprising will happen tonight.");
+            System.out.println("Something surprising will happen.");
         } else if (randomInt == 2 || randomInt == 9) {
             System.out.println("Better not tell you now.");
         } else if (randomInt == 3) {
