@@ -7,24 +7,13 @@
 //Add Java libraries needed for the game
 //import java.awt.Canvas;
 
-//Graphics L
-//Basic Game Application
-// Basic Object, Image, Movement
-// Threaded
-
-//*******************************************************************************
-//Import Section
-//Add Java libraries needed for the game
-//import java.awt.Canvas;
-
 //Graphics Libraries
 import java.awt.Graphics2D;
 import java.awt.image.BufferStrategy;
 import java.awt.*;
-import javax.print.attribute.standard.PrinterMakeAndModel;
+//import javax.print.attribute.standard.PrinterMakeAndModel;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
 
 //*******************************************************************************
 
@@ -197,8 +186,6 @@ public class GameLand implements Runnable {
             PacMan.width = PacMan.width + 10;
             SushiChan.isAlive = false;
             SushiChan.xpos=-1000;
-            PacMan.dx = -PacMan.dx;
-            PacMan.dy = -PacMan.dy;
             for (int i=0; i< Pinky.length ; i++){
                 Pinky[i].isAlive=true;
             }
@@ -212,8 +199,6 @@ public class GameLand implements Runnable {
             System.out.println("YUM!");
             PacMan.height = PacMan.height + 10;
             PacMan.width = PacMan.width + 10;
-            PacMan.dx = -PacMan.dx;
-            PacMan.dy = -PacMan.dy;
             Hamby.isAlive = false;
             Hamby.xpos=-1000;
             for (int i=0; i< Pinky.length ; i++){
@@ -228,8 +213,6 @@ public class GameLand implements Runnable {
             System.out.println("YUM!");
             PacMan.height = Ramen.height + 10;
             PacMan.width = Ramen.width + 10;
-            PacMan.dx = -PacMan.dx;
-            PacMan.dy = -PacMan.dy;
             Ramen.isAlive = false;
             Ramen.xpos=-1000;
             for (int i=0; i< Pinky.length ; i++){
